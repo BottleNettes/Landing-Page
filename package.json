@@ -1,20 +1,20 @@
 {
-  "name": "landing-page",
-  "private": true,
-  "version": "0.5.0",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "server": "nodemon server/server.js",
-    "start": "concurrently \"nodemon server/server.js\" \"vite\" \"open http://localhost:5173\"",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "concurrently": "^9.1.2",
-    "nodemon": "^3.1.9",
-    "vite": "^6.0.6"
-  }
+	"name": "landing-page",
+	"private": true,
+	"version": "0.5.0",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"server": "nodemon server.js",
+		"start": "concurrently \"nodemon server.js\" \"vite\" \"open http://localhost:5174\"",
+		"build": "vite build",
+		"lint": "eslint .",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"concurrently": "^9.1.2",
+		"nodemon": "^3.1.9",
+		"vite": "^6.0.6"
+	}
 }

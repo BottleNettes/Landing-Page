@@ -1,0 +1,26 @@
+/* Import Tailwind base styles */
+@tailwind base;
+
+/* Import Tailwind component styles */
+@tailwind components;
+
+/* Import Tailwind utility styles */
+@tailwind utilities;
+
+/* Add custom Tailwind configurations (optional) */
+.container {
+  @apply mx-auto px-4;
+}
+
+.btn {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.section {
+  @apply bg-gray-100 p-6 rounded shadow-lg;
+}
+
+.heading {
+  @apply text-2xl font-bold text-center text-blue-600 mb-4;
+}
+
