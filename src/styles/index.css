@@ -1,26 +1,74 @@
-/* Import Tailwind base styles */
 @tailwind base;
 
-/* Import Tailwind component styles */
 @tailwind components;
 
-/* Import Tailwind utility styles */
 @tailwind utilities;
 
-/* Add custom Tailwind configurations (optional) */
 .container {
-  @apply mx-auto px-4;
+	@apply mx-auto px-4;
 }
 
 .btn {
-  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+	@apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
 }
 
 .section {
-  @apply bg-gray-100 p-6 rounded shadow-lg;
+	@apply bg-gray-100 p-6 rounded shadow-lg;
 }
 
 .heading {
-  @apply text-2xl font-bold text-center text-blue-600 mb-4;
+	@apply text-2xl font-bold text-center text-blue-600 mb-4;
 }
 
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f4f8; 
+		color: #333;
+	}
+
+section {
+	padding: 20px;
+	margin: 0 auto;
+	max-width: 1200px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	background: #ffffff;
+}
+
+h1,
+h2 {
+	text-align: center;
+	color: #007acc; 
+}
+
+a {
+	text-decoration: none;
+	color: #007acc;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007acc;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #005f99;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

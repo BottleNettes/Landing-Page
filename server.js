@@ -1,21 +1,16 @@
-import express from 'express';
-
+const express = require('express');
+const path = require('path');
 const app = express();
-const PORT = process.env.PORT || 3001; // Backend port
+const PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(express.json());
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'dist')));
 
-// Routes
-app.get('/', (req, res) => {
-	res.send('Welcome to the BottleNetes Backend!');
+// Catch-all route to serve index.html
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-app.get('/health', (req, res) => {
-	res.status(200).json({ status: 'Healthy' });
-});
-
-// Start the server
 app.listen(PORT, () => {
-	console.log(`Backend server is running at http://localhost:${PORT}`);
+	console.log(`Server is running on http://localhost:${PORT}`);
 });

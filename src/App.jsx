@@ -6,15 +6,15 @@ import Team from './components/Team';
 import Blog from './components/Blog';
 
 const App = () => (
-  <div>
-    <NavBar />
-    <main>
-      <About />
-      <Docs />
-      <Team />
-      <Blog />
-    </main>
-  </div>
+	<div>
+		<NavBar />
+		<main>
+			<About />
+			<Docs />
+			<Team />
+			<Blog />
+		</main>
+	</div>
 );
 
 export default App;
