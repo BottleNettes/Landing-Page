@@ -1,7 +1,5 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
 .container {
@@ -71,4 +69,19 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#dependencies {
+	
+}
+
+#cards {
+	display: flex;
+	flex-direction: column;
+}
+
+#lang {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.25rem;
 }
