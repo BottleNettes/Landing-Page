@@ -23,7 +23,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #f0f4f8; 
-		color: #333;
+	color: #333;
 	}
 
 section {
@@ -72,16 +72,47 @@ button:hover {
 }
 
 #dependencies {
-	
+	width: 80%;
+	place-self: center;
+	text-align: center;
 }
 
 #cards {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 #lang {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 1.25rem;
+	gap: 1rem;
+	width: 20%;
+}
+
+#tech {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1rem;
+	width: 50%;
+}
+
+#lang button,
+#tech button {
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+}
+
+#lang button:active,
+#tech button:active {
+	filter: brightness(0.9);
+}
+
+#lang button:hover,
+#lang button:active,
+#tech button:hover,
+#tech button:active {
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
