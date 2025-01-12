@@ -36,7 +36,8 @@ section {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	text-align: center;
 	color: #007acc; 
 }
@@ -83,25 +84,39 @@ button:hover {
 	align-items: center;
 }
 
-#lang {
+#lang,
+#tech {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1rem;
+}
+
+#lang {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	width: 20%;
 }
 
 #tech {
-	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 1rem;
 	width: 50%;
 }
 
 #lang button,
 #tech button {
+	display: flex;
+	justify-content: start;
+	align-items: center;
 	padding: 1rem 1.5rem;
 	border-radius: 1rem;
+	background-image: linear-gradient(to right, #334155,  #1e293b);
+	color: #e2e8f0;
+	width: 100%;
 }
+
+#lang button:hover,
+#tech button:hover {
+	filter: brightness(1.2)
+}
+
 
 #lang button:active,
 #tech button:active {
@@ -114,5 +129,23 @@ button:hover {
 #tech button:active {
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 200ms;
+}
+
+#lang button img,
+#tech button img {
+	width: 2rem;
+	height: 2rem;
+	padding-right: 1rem;
+}
+
+#lang a,
+#lang a:hover,
+#lang a:active,
+#lang a:focus,
+#tech a,
+#tech a:hover,
+#tech a:active,
+#tech a:focus {
+	text-decoration: none;
 }
