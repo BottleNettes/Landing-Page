@@ -38,7 +38,7 @@ const Dependencies = () => {
 						title='React Homepage'
 						aria-label='React Homepage'
 					>
-						<button id='1'>
+						<button id='3'>
 							<img src='src/assets/react.svg' />
 							React
 						</button>
@@ -48,7 +48,7 @@ const Dependencies = () => {
 						title='React Homepage'
 						aria-label='React Homepage'
 					>
-						<button id='2'>
+						<button id='4'>
 							<img src='src/assets/reactrouter.svg' />
 							React Router
 						</button>
@@ -58,7 +58,7 @@ const Dependencies = () => {
 						title='Node.js Homepage'
 						aria-label='Node.js Homepage'
 					>
-						<button id='3'>
+						<button id='5'>
 							<img src='src/assets/nodedotjs.svg' />
 							Node.js
 						</button>
@@ -68,7 +68,7 @@ const Dependencies = () => {
 						title='Express.js Homepage'
 						aria-label='Express.js Homepage'
 					>
-						<button id='4'>
+						<button id='6'>
 							<img src='src/assets/express.svg' />
 							Express
 						</button>
@@ -78,7 +78,7 @@ const Dependencies = () => {
 						title='Vite Homepage'
 						aria-label='Vite Homepage'
 					>
-						<button id='5'>
+						<button id='7'>
 							<img src='src/assets/vite.svg' />
 							Vite
 						</button>
@@ -88,7 +88,7 @@ const Dependencies = () => {
 						title='OpenAI Homepage'
 						aria-label='OpenAI Homepage'
 					>
-						<button id='6'>
+						<button id='8'>
 							<img src='src/assets/openai.svg' />
 							OpenAI
 						</button>
@@ -98,7 +98,7 @@ const Dependencies = () => {
 						title='PostgreSQL Homepage'
 						aria-label='PostgreSQL Homepage'
 					>
-						<button id='7'>
+						<button id='9'>
 							<img src='src/assets/postgresql.svg' />
 							PostgreSQL
 						</button>
@@ -108,7 +108,7 @@ const Dependencies = () => {
 						title='Supabase Homepage'
 						aria-label='Supabase Homepage'
 					>
-						<button id='8'>
+						<button id='10'>
 							<img src='src/assets/supabase.svg' />
 							Supabase
 						</button>
@@ -118,7 +118,7 @@ const Dependencies = () => {
 						title='Zustand Homepage'
 						aria-label='Zustand Homepage'
 					>
-						<button id='9'>
+						<button id='11'>
 							<img src='src/assets/zustand.svg' />
 							Zustand
 						</button>
@@ -128,7 +128,7 @@ const Dependencies = () => {
 						title='Lucide Homepage'
 						aria-label='Lucide Homepage'
 					>
-						<button id='10'>
+						<button id='12'>
 							<img src='src/assets/lucide.svg' />
 							Lucide
 						</button>
@@ -138,7 +138,7 @@ const Dependencies = () => {
 						title='MUI Homepage'
 						aria-label='MUI Homepage'
 					>
-						<button id='11'>
+						<button id='13'>
 							<img src='src/assets/mui.svg' />
 							MaterialUI
 						</button>
@@ -148,7 +148,7 @@ const Dependencies = () => {
 						title='Tailwind CSS Homepage'
 						aria-label='Tailwind CSS Homepage'
 					>
-						<button id='12'>
+						<button id='14'>
 							<img src='src/assets/tailwindcss.svg' />
 							Tailwind CSS
 						</button>
@@ -158,7 +158,7 @@ const Dependencies = () => {
 						title='Chart.js Homepage'
 						aria-label='Chart.js Homepage'
 					>
-						<button id='13'>
+						<button id='15'>
 							<img src='src/assets/chartdotjs.svg' />
 							Chart.js
 						</button>
@@ -168,7 +168,7 @@ const Dependencies = () => {
 						title='Axios Homepage'
 						aria-label='Axios Homepage'
 					>
-						<button id='14'>
+						<button id='16'>
 							<img src='src/assets/axios.svg' />
 							Axios
 						</button>
@@ -178,7 +178,7 @@ const Dependencies = () => {
 						title='Sequelize Homepage'
 						aria-label='Sequelize Homepage'
 					>
-						<button id='15'>
+						<button id='17'>
 							<img src='src/assets/sequelize.svg' />
 							Sequelize
 						</button>
@@ -188,7 +188,7 @@ const Dependencies = () => {
 						title='Docker Homepage'
 						aria-label='Docker Homepage'
 					>
-						<button id='16'>
+						<button id='18'>
 							<img src='src/assets/docker.svg' />
 							Docker
 						</button>
@@ -198,7 +198,7 @@ const Dependencies = () => {
 						title='Kubernetes Homepage'
 						aria-label='Kubernetes Homepage'
 					>
-						<button id='17'>
+						<button id='19'>
 							<img src='/src/assets/kubernetes.svg' />
 							Kubernetes
 						</button>
@@ -208,7 +208,7 @@ const Dependencies = () => {
 						title='Prometheus Homepage'
 						aria-label='Prometheus Homepage'
 					>
-						<button id='18'>
+						<button id='20'>
 							<img src='src/assets/prometheus.svg' />
 							Prometheus
 						</button>
@@ -218,7 +218,7 @@ const Dependencies = () => {
 						title='Istio homepage'
 						aria-label='Istio Homepage'
 					>
-						<button id='19'>
+						<button id='21'>
 							<img src='src/assets/istio.svg' />
 							Istio
 						</button>
@@ -228,7 +228,7 @@ const Dependencies = () => {
 						title='Helm Homepage'
 						aria-label='Helm Homepage'
 					>
-						<button id='20'>
+						<button id='22'>
 							<img src='src/assets/helm.svg' />
 							Helm
 						</button>
