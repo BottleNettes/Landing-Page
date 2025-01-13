@@ -8,7 +8,6 @@ const Dependencies = () => {
 				<h3>Programming Languages</h3>
 				<div
 					id='lang'
-					className=' brightness-110 transition'
 				>
 					<a
 						href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
