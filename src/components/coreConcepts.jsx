@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CoreConcepts = () => {
-  return;
+	return;
 };
 
 export default CoreConcepts;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Subtitle = () => {
-  return;
+	return;
 };
 
 export default Subtitle;

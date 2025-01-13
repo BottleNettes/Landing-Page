@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SourcesList = () => {
-  return;
+	return;
 };
 
 export default SourcesList;
