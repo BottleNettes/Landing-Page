@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './components/NavBar';
+import NavBar from './components/Taskbar';
 import About from './components/About';
-import Docs from './components/Docs';
-import Team from './components/Team';
+import Docs from './components/Documentation';
+import Team from './components/Developers';
 import Blog from './components/Blog';
 import Dependencies from './components/Dependencies';
 
