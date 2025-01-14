@@ -2,11 +2,36 @@ import React from 'react';
 
 const Developers = () => {
 	const teamMembers = [
-		{ name: 'Dev A', github: '#', linkedin: '#', image: '/placeholder.jpg' },
-		{ name: 'Dev B', github: '#', linkedin: '#', image: '/placeholder.jpg' },
-		{ name: 'Dev C', github: '#', linkedin: '#', image: '/placeholder.jpg' },
-		{ name: 'Dev D', github: '#', linkedin: '#', image: '/placeholder.jpg' },
-		{ name: 'Dev E', github: '#', linkedin: '#', image: '/placeholder.jpg' },
+		{
+			name: 'Dev A',
+			github: '#',
+			linkedin: '#',
+			image: '/placeholder.jpg',
+		},
+		{
+			name: 'Dev B',
+			github: '#',
+			linkedin: '#',
+			image: '/placeholder.jpg',
+		},
+		{
+			name: 'Dev C',
+			github: '#',
+			linkedin: '#',
+			image: '/placeholder.jpg',
+		},
+		{
+			name: 'Dev D',
+			github: '#',
+			linkedin: '#',
+			image: '/placeholder.jpg',
+		},
+		{
+			name: 'Dev E',
+			github: '#',
+			linkedin: '#',
+			image: '/placeholder.jpg',
+		},
 	];
 
 	return (
