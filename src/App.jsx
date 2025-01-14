@@ -5,6 +5,7 @@ import Docs from './components/Docs';
 import Developers from './components/Developers';
 import Blog from './components/Blog';
 import Dependencies from './components/Dependencies';
+import Features from './components/Features';
 import SourcesList from './components/SourcesList';
 
 const App = () => (
@@ -12,6 +13,7 @@ const App = () => (
 		<NavBar />
 		<main>
 			<About />
+			<Features />
 			<Dependencies />
 			<Docs />
 			<Developers />

@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .container {
-	@apply mx-auto px-4;
+  @apply mx-auto px-4;
 }
 
 .btn {
-	@apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
 }
 
 .section {
-	@apply bg-gray-100 p-6 rounded shadow-lg;
+  @apply bg-gray-100 p-6 rounded shadow-lg;
 }
 
 .heading {
-	@apply text-2xl font-bold text-center text-blue-600 mb-4;
+  @apply text-2xl font-bold text-center text-blue-600 mb-4;
 }
 
 body {
@@ -27,12 +27,12 @@ body {
 }
 
 section {
-	padding: 20px;
-	margin: 0 auto;
-	max-width: 1200px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
-	background: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 h1,
@@ -43,61 +43,61 @@ h3 {
 }
 
 a {
-	text-decoration: none;
-	color: #007acc;
-	font-weight: bold;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 button {
-	padding: 10px 20px;
-	font-size: 16px;
-	color: #fff;
-	background-color: #007acc;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007acc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
-	background-color: #005f99;
+  background-color: #005f99;
 }
 
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #dependencies {
-	width: 80%;
-	place-self: center;
-	text-align: center;
+  width: 80%;
+  place-self: center;
+  text-align: center;
 }
 
 #cards {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #lang,
 #tech {
-	display: grid;
-	gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 #lang {
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	width: 20%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 20%;
 }
 
 #tech {
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	width: 50%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 50%;
 }
 
 #lang button,
@@ -114,30 +114,30 @@ button:hover {
 
 #lang button:hover,
 #tech button:hover {
-	filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 #lang button:active,
 #tech button:active {
-	filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 #lang button:hover,
 #lang button:active,
 #tech button:hover,
 #tech button:active {
-	transition-property: color, background-color, border-color,
-		text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-		filter, backdrop-filter;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 200ms;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
 
 #lang button img,
 #tech button img {
-	width: 2rem;
-	height: 2rem;
-	padding-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  padding-right: 1rem;
 }
 
 #lang a,
@@ -152,6 +152,133 @@ button:hover {
 #more-info a {
 	text-decoration: none;
 }
+
+.features-container {
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.featureButton {
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.featureButton:hover {
+  background-color: #2980b9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.selected {
+  background-color: #236d9e;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#featureDetailsDiv {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 30px;
+}
+
+.text-section {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  text-align: left;
+  font-size: 1.1rem;
+  padding-right: 20px;
+}
+
+.text-section p {
+  margin: 20px 0;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+.media-section {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.media-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+.media-section.ai-insights img {
+  max-width: 80%;
+  max-height: 300px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .featureButton {
+    width: 100%;
+    max-width: 180px;
+    margin: 5px 0;
+  }
+
+  #featureDetailsDiv {
+    padding: 20px;
+  }
+
+  .feature-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-section {
+    padding: 0 15px;
+  }
+
+  .media-section img {
+    max-height: 300px;
+  }
+}
+
 
 #sources-container {
 	background-image: linear-gradient(to right, #bfdbfe, #007acc);
