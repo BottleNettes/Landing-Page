@@ -25,7 +25,7 @@ const Features = () => {
           }`}
           onClick={() => setClickedButton('Memory and CPU Usage')}
         >
-          Memory and CPU Usage
+          Request vs. Limit
         </button>
         <button
           className={`featureButton ${
