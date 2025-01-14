@@ -1,22 +1,41 @@
 import React from 'react';
+import JavaScriptIcon from '../assets/javascript.svg';
+import TypeScriptIcon from '../assets/typescript.svg';
+import ReactIcon from '../assets/react.svg';
+import ReactRouterIcon from '../assets/reactrouter.svg';
+import NodeIcon from '../assets/nodedotjs.svg';
+import ExpressIcon from '../assets/express.svg';
+import ViteIcon from '../assets/vite.svg';
+import OpenAIIcon from '../assets/openai.svg';
+import PostgreSQLIcon from '../assets/postgresql.svg';
+import SupabaseIcon from '../assets/supabase.svg';
+import ZustandIcon from '../assets/zustand.svg';
+import LucideIcon from '../assets/lucide.svg';
+import MUIIcon from '../assets/mui.svg';
+import TailwindIcon from '../assets/tailwindcss.svg';
+import ChartJSIcon from '../assets/chartdotjs.svg';
+import AxiosIcon from '../assets/axios.svg';
+import SequelizeIcon from '../assets/sequelize.svg';
+import DockerIcon from '../assets/docker.svg';
+import KubernetesIcon from '../assets/kubernetes.svg';
+import PrometheusIcon from '../assets/prometheus.svg';
+import IstioIcon from '../assets/istio.svg';
+import HelmIcon from '../assets/helm.svg';
 
 const Dependencies = () => {
 	return (
-		<div id='dependencies'>
+		<div id='dependencies' className=' 2xl:grid-cols-2'>
 			<h2>Tools and Frameworks that made BottleNetes</h2>
 			<div id='cards'>
 				<h3>Programming Languages</h3>
-				<div
-					id='lang'
-					className=' brightness-110 transition'
-				>
+				<div id='lang'>
 					<a
 						href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
 						title='JavaScript MDN Documentation'
 						aria-label='JavaScript MDN Documentation'
 					>
 						<button id='1'>
-							<img src='src/assets/javascript.svg' />
+							<img src={JavaScriptIcon} />
 							JavaScript
 						</button>
 					</a>
@@ -26,7 +45,7 @@ const Dependencies = () => {
 						aria-label='TypeScript Homepage'
 					>
 						<button id='2'>
-							<img src='src/assets/typescript.svg' />
+							<img src={TypeScriptIcon} />
 							TypeScript
 						</button>
 					</a>
@@ -39,7 +58,7 @@ const Dependencies = () => {
 						aria-label='React Homepage'
 					>
 						<button id='3'>
-							<img src='src/assets/react.svg' />
+							<img src={ReactIcon} />
 							React
 						</button>
 					</a>
@@ -49,7 +68,7 @@ const Dependencies = () => {
 						aria-label='React Homepage'
 					>
 						<button id='4'>
-							<img src='src/assets/reactrouter.svg' />
+							<img src={ReactRouterIcon} />
 							React Router
 						</button>
 					</a>
@@ -59,7 +78,7 @@ const Dependencies = () => {
 						aria-label='Node.js Homepage'
 					>
 						<button id='5'>
-							<img src='src/assets/nodedotjs.svg' />
+							<img src={NodeIcon} />
 							Node.js
 						</button>
 					</a>
@@ -69,7 +88,7 @@ const Dependencies = () => {
 						aria-label='Express.js Homepage'
 					>
 						<button id='6'>
-							<img src='src/assets/express.svg' />
+							<img src={ExpressIcon} />
 							Express
 						</button>
 					</a>
@@ -79,7 +98,7 @@ const Dependencies = () => {
 						aria-label='Vite Homepage'
 					>
 						<button id='7'>
-							<img src='src/assets/vite.svg' />
+							<img src={ViteIcon} />
 							Vite
 						</button>
 					</a>
@@ -89,7 +108,7 @@ const Dependencies = () => {
 						aria-label='OpenAI Homepage'
 					>
 						<button id='8'>
-							<img src='src/assets/openai.svg' />
+							<img src={OpenAIIcon} />
 							OpenAI
 						</button>
 					</a>
@@ -99,7 +118,7 @@ const Dependencies = () => {
 						aria-label='PostgreSQL Homepage'
 					>
 						<button id='9'>
-							<img src='src/assets/postgresql.svg' />
+							<img src={PostgreSQLIcon} />
 							PostgreSQL
 						</button>
 					</a>
@@ -109,7 +128,7 @@ const Dependencies = () => {
 						aria-label='Supabase Homepage'
 					>
 						<button id='10'>
-							<img src='src/assets/supabase.svg' />
+							<img src={SupabaseIcon} />
 							Supabase
 						</button>
 					</a>
@@ -119,7 +138,7 @@ const Dependencies = () => {
 						aria-label='Zustand Homepage'
 					>
 						<button id='11'>
-							<img src='src/assets/zustand.svg' />
+							<img src={ZustandIcon} />
 							Zustand
 						</button>
 					</a>
@@ -129,7 +148,7 @@ const Dependencies = () => {
 						aria-label='Lucide Homepage'
 					>
 						<button id='12'>
-							<img src='src/assets/lucide.svg' />
+							<img src={LucideIcon} />
 							Lucide
 						</button>
 					</a>
@@ -139,7 +158,7 @@ const Dependencies = () => {
 						aria-label='MUI Homepage'
 					>
 						<button id='13'>
-							<img src='src/assets/mui.svg' />
+							<img src={MUIIcon} />
 							MaterialUI
 						</button>
 					</a>
@@ -149,7 +168,7 @@ const Dependencies = () => {
 						aria-label='Tailwind CSS Homepage'
 					>
 						<button id='14'>
-							<img src='src/assets/tailwindcss.svg' />
+							<img src={TailwindIcon} />
 							Tailwind CSS
 						</button>
 					</a>
@@ -159,7 +178,7 @@ const Dependencies = () => {
 						aria-label='Chart.js Homepage'
 					>
 						<button id='15'>
-							<img src='src/assets/chartdotjs.svg' />
+							<img src={ChartJSIcon} />
 							Chart.js
 						</button>
 					</a>
@@ -169,7 +188,7 @@ const Dependencies = () => {
 						aria-label='Axios Homepage'
 					>
 						<button id='16'>
-							<img src='src/assets/axios.svg' />
+							<img src={AxiosIcon} />
 							Axios
 						</button>
 					</a>
@@ -179,7 +198,7 @@ const Dependencies = () => {
 						aria-label='Sequelize Homepage'
 					>
 						<button id='17'>
-							<img src='src/assets/sequelize.svg' />
+							<img src={SequelizeIcon} />
 							Sequelize
 						</button>
 					</a>
@@ -189,7 +208,7 @@ const Dependencies = () => {
 						aria-label='Docker Homepage'
 					>
 						<button id='18'>
-							<img src='src/assets/docker.svg' />
+							<img src={DockerIcon} />
 							Docker
 						</button>
 					</a>
@@ -199,7 +218,7 @@ const Dependencies = () => {
 						aria-label='Kubernetes Homepage'
 					>
 						<button id='19'>
-							<img src='/src/assets/kubernetes.svg' />
+							<img src={KubernetesIcon} />
 							Kubernetes
 						</button>
 					</a>
@@ -209,7 +228,7 @@ const Dependencies = () => {
 						aria-label='Prometheus Homepage'
 					>
 						<button id='20'>
-							<img src='src/assets/prometheus.svg' />
+							<img src={PrometheusIcon} />
 							Prometheus
 						</button>
 					</a>
@@ -219,7 +238,7 @@ const Dependencies = () => {
 						aria-label='Istio Homepage'
 					>
 						<button id='21'>
-							<img src='src/assets/istio.svg' />
+							<img src={IstioIcon} />
 							Istio
 						</button>
 					</a>
@@ -229,7 +248,7 @@ const Dependencies = () => {
 						aria-label='Helm Homepage'
 					>
 						<button id='22'>
-							<img src='src/assets/helm.svg' />
+							<img src={HelmIcon} />
 							Helm
 						</button>
 					</a>
