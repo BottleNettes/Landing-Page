@@ -7,21 +7,21 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-	base: './',
-	server: {
-		port: 5174,
-	},
-	plugins: [react()],
-	build: {
-		rollupOptions: {
-			input: {
-				root: resolve(__dirname, 'index.html'),
-			},
-			external: ['server/**/*.ts'],
-		},
-	},
-	optimizeDeps: {
-		exclude: ['lucide-react'],
-	},
-	assetsInclude: ['**/*.mp4'],
+  base: './',
+  server: {
+    port: 5174,
+  },
+  plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        root: resolve(__dirname, 'index.html'),
+      },
+      external: ['server/**/*.ts'],
+    },
+  },
+  optimizeDeps: {
+    include: ['lucide-react'],
+  },
+  assetsInclude: ['**/*.mp4'],
 });
