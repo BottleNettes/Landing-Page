@@ -1,51 +1,60 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import { HiChevronDoubleDown } from 'react-icons/hi';
 import openingVideo from '../assets/opening.mp4';
 
 const Subtitle = () => {
-	const videoRef = useRef(null);
-	const [loopStart, setLoopStart] = useState(null);
-	const [isLooping, setIsLooping] = useState(false);
+  const videoRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(true);
 
-	const handleTimeUpdate = () => {
-		const video = videoRef.current;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
 
-		if (video) {
-			const bufferTime = 0.1; // Slight overlap for smooth transition
+      // Make the video fade out by half viewport height
+      if (scrollPosition < windowHeight / 2) {
+        const opacity = 1 - scrollPosition / (windowHeight / 2);
+        if (videoRef.current) {
+          videoRef.current.style.opacity = opacity;
+        }
+      } else {
+        // Ensure video is fully transparent after half scroll
+        if (videoRef.current) {
+          videoRef.current.style.opacity = 0;
+        }
+      }
+    };
 
-			if (isLooping && video.currentTime >= video.duration - bufferTime) {
-				// Adjust slightly before loopStart for seamless transition
-				video.currentTime = loopStart + bufferTime;
-				video.play();
-			}
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-			if (!isLooping && video.currentTime >= video.duration) {
-				const loopStartPoint = video.duration - 9; // Set loop to last 9 seconds
-				setLoopStart(loopStartPoint);
-				setIsLooping(true);
-				video.currentTime = loopStartPoint + bufferTime;
-				video.play();
-			}
-		}
-	};
+  const handleScrollClick = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
 
-	return (
-		<div className='subtitle-header text-slate-50'>
-			<video
-				ref={videoRef}
-				className='subtitle-video'
-				autoPlay
-				muted
-				preload='auto'
-				onTimeUpdate={handleTimeUpdate}
-			>
-				<source
-					src={openingVideo}
-					type='video/mp4'
-				/>
-				Your browser does not support the video tag.
-			</video>
-		</div>
-	);
+  return (
+    <div className='subtitle-header'>
+      <video
+        ref={videoRef}
+        className='subtitle-video'
+        autoPlay
+        muted
+        preload='auto'
+        loop
+      >
+        <source src={openingVideo} type='video/mp4' />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className='scroll-indicator' onClick={handleScrollClick}>
+        <HiChevronDoubleDown className='scroll-arrow' />
+      </div>
+    </div>
+  );
 };
 
 export default Subtitle;

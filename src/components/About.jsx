@@ -11,7 +11,8 @@ const About = () => (
 
       <div className='about-video-container backdrop-blur-sm bg-white/30 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-16'>
         <iframe
-          src='https://www.youtube.com/embed/KN3IemyqJJw'
+          // src='https://www.youtube.com/embed/KN3IemyqJJw'
+          src='https://www.youtube.com/embed/8QLYp1AubWg'
           title='BottleNetes Introduction'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen

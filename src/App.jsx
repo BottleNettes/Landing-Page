@@ -15,7 +15,6 @@ import './styles/index.css';
 
 const App = () => (
   <div className='app-container'>
-    {/* Sticky NavBar */}
     <NavBar />
 
     {/* Subtitle Section */}
