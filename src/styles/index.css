@@ -1,29 +1,35 @@
+/* Tailwind Base */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Container Styles */
 .container {
   @apply mx-auto px-4;
 }
 
+/* Button Styles */
 .btn {
   @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
 }
 
+/* Section Styles */
 .section {
   @apply bg-gray-100 p-6 rounded shadow-lg;
 }
 
+/* Heading Styles */
 .heading {
   @apply text-2xl font-bold text-center text-blue-600 mb-4;
 }
 
+/* Global Styles */
 body {
-	font-family: 'Arial', sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #f0f4f8;
-	color: #333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
 section {
@@ -38,8 +44,8 @@ section {
 h1,
 h2,
 h3 {
-	text-align: center;
-	color: #007acc;
+  text-align: center;
+  color: #007acc;
 }
 
 a {
@@ -66,10 +72,191 @@ button:hover {
   background-color: #005f99;
 }
 
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .subtitle-header {
+    height: 400px;
+    padding-top: 20px;
+  }
+
+  .subtitle-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Subtitle Header */
+.subtitle-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  overflow: hidden;
+  margin-bottom: -1px;
+  padding-top: 300px;
+  padding: 100px 0;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 122, 204, 0.8), rgba(0, 0, 0, 0));
+}
+
+.subtitle-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+  /* Subtitle Video */
+  /* .subtitle-video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 2; /* Place above the background video */
+    /* object-fit: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none; Ensure it's not interactable */
+  /* }
+   */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust to your desired video width */
+  display: flex;
+  flex-direction: column; /* Stack video and button */
+  align-items: center;
+} *
+
+/* VIDEO OVERLAY */
+.video-overlay {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  /* right: 0; */
+  bottom: 0;
+  width: 50%;
+  height: 700px; /* Adjust height as needed */
+  background: linear-gradient(to bottom, rgba(0, 122, 204, 0.5), rgba(0, 122, 204, 0));
+  pointer-events: none;
+}
+
+/* Global Link Styles */
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
+}
+
+/* Global Link Styles */
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
+}
+
+/* Global Link Styles */
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
+}
+
+/* Global Link Styles */
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-content {
+  margin-top: 100px; /* Creates space for the video above */
+  padding: 20px; /* Add side padding for consistent alignment */
+}
+
+.about-section {
+  margin-top: 50px; /* Space below the main content */
+  padding: 20px; /* Add side padding for consistent alignment */
 }
 
 #dependencies {
@@ -413,3 +600,17 @@ button:hover {
 		padding: 1rem 0.5rem;
 	}
 }
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .subtitle-header {
+    height: 400px; /* Adjusted height for smaller screens */
+    padding-top: 20px; /* Reduced space above the video */
+  }
+
+  .subtitle-video {
+    width: 100%; /* Ensure the video stretches fully */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
