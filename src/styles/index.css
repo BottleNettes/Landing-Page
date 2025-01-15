@@ -810,3 +810,46 @@ button:hover {
     height: 160px;
   }
 }
+
+.team-member .social-icon {
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.team-member .social-icons-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-member .social-icon:hover {
+  transform: translateY(-3px) scale(1.15);
+  filter: brightness(1.2);
+}
+
+.team-member .member-image-container {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.team-member .member-image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(
+    135deg,
+    rgba(21, 151, 211, 0.2),
+    rgba(50, 205, 238, 0.2)
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.team-member .member-image-container:hover::after {
+  opacity: 1;
+}

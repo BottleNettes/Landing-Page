@@ -73,24 +73,24 @@ const Team = () => {
                   {member.name}
                 </h3>
 
-                <div className='flex justify-center gap-1'>
+                <div className='social-icons-container'>
                   <a
                     href={member.github}
-                    className='text-slate-500 hover:text-blue-600 transition-colors'
+                    className='social-icon text-slate-500 hover:text-blue-600'
                     target='_blank'
                     rel='noopener noreferrer'
                     aria-label={`${member.name}'s GitHub`}
                   >
-                    <FaGithub size={20} />
+                    <FaGithub />
                   </a>
                   <a
                     href={member.linkedin}
-                    className='text-slate-500 hover:text-blue-600 transition-colors'
+                    className='social-icon text-slate-500 hover:text-blue-600'
                     target='_blank'
                     rel='noopener noreferrer'
                     aria-label={`${member.name}'s LinkedIn`}
                   >
-                    <FaLinkedin size={20} />
+                    <FaLinkedin />
                   </a>
                 </div>
               </div>
