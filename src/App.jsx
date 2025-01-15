@@ -1,19 +1,38 @@
 import React from 'react';
+import ErrorBoundary from './components/ErrorBoundary';
 import NavBar from './components/NavBar';
+import Subtitle from './components/Subtitle';
 import About from './components/About';
 import Docs from './components/Docs';
-import Team from './components/Team';
+import Developers from './components/Developers';
 import Blog from './components/Blog';
+import Dependencies from './components/Dependencies';
+import Features from './components/Features';
+import SourcesList from './components/SourcesList';
+import './styles/index.css';
+import FeatureDetails from './components/FeatureDetails';
 
 const App = () => (
-	<div>
-		<NavBar />
-		<main>
+	<div className="app-container">
+	  {/* Sticky NavBar */}
+	  <NavBar />
+  
+	  {/* Subtitle Section */}
+	  <div className="video-section">
+		<Subtitle />
+	  </div>
+  
+	  {/* Main Content Section */}
+	  <div className="main-content">
 			<About />
-			<Docs />
-			<Team />
+			<Features />
+			<FeatureDetails />
+			<Dependencies />
 			<Blog />
-		</main>
+			<Developers />
+			<SourcesList />
+			{/* Add other components like Features or Footer here */}
+		</div>
 	</div>
 );
 
