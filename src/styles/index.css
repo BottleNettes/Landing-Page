@@ -30,6 +30,8 @@ body {
   padding: 0;
   background-color: #f0f4f8;
   color: #333;
+	place-content: center center;
+	text-align: center;
 }
 
 section {
@@ -39,6 +41,8 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background: #ffffff;
+	place-content: center center;
+	text-align: center;
 }
 
 h1,
@@ -125,18 +129,18 @@ button:hover {
 
 .navbar a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
 }
 
 /* Subtitle Header */
 .subtitle-header {
-  position: relative;
+  /* position: relative;
   width: 100%;
   height: auto;
   min-height: 700px;
@@ -145,11 +149,11 @@ button:hover {
   padding-top: 300px;
   padding: 100px 0;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(0, 122, 204, 0.8), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(0, 122, 204, 0.8), rgba(0, 0, 0, 0)); */
 }
 
 .subtitle-video {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -158,7 +162,7 @@ button:hover {
   height: auto;
   z-index: 1;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%); */
 }
 
   /* Subtitle Video */
@@ -200,49 +204,6 @@ button:hover {
 }
 
 /* Global Link Styles */
-.navbar a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
-}
-
-/* Global Link Styles */
-.navbar a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
-}
-
-/* Global Link Styles */
-.navbar a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
-}
-
-/* Global Link Styles */
-.navbar a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: rgba(255, 255, 255, 1); /* Fully white text on hover */
-}
-
 .center {
   display: flex;
   justify-content: center;
