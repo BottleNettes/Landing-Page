@@ -7,10 +7,12 @@ import Docs from './components/Docs';
 import Blog from './components/Blog';
 import Dependencies from './components/Dependencies';
 import Features from './components/Features';
-import SourcesList from './components/SourcesList';
-import './styles/index.css';
+import CoreConcepts from './components/CoreConcepts';
 import FeatureDetails from './components/FeatureDetails';
 import Team from './components/Team';
+import SourcesList from './components/SourcesList';
+
+import './styles/index.css';
 
 const App = () => (
   <div className='app-container'>
