@@ -26,6 +26,7 @@ const App = () => (
 
     {/* Main Content Section */}
     <div className='main-content'>
+      <CoreConcepts />
       <About />
       <Features />
       <FeatureDetails />
