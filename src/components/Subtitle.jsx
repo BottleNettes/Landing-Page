@@ -29,7 +29,7 @@ const Subtitle = () => {
 	};
 
 	return (
-		<div className='subtitle-header'>
+		<div className='subtitle-header text-slate-50'>
 			<video
 				ref={videoRef}
 				className='subtitle-video'

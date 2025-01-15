@@ -7,8 +7,8 @@ import background from './assets/background.mp4';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		{/* <ErrorBoundary> */}
-			{/* <video
+		<ErrorBoundary>
+			<video
 				src={background}
 				autoPlay
 				loop
@@ -22,8 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 					objectFit: 'cover',
 					zIndex: -1, // Keeps it behind all other content
 				}}
-			/> */}
+			/>
 			<App />
-		{/* </ErrorBoundary> */}
+		</ErrorBoundary>
 	</React.StrictMode>
 );

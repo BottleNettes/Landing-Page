@@ -92,28 +92,16 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .subtitle-header {
-    height: 400px;
-    padding-top: 20px;
-  }
-
-  .subtitle-video {
-    width: 100%;
-    height: auto;
-  }
-}
-
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
-  padding: 10px 20px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  padding: 1rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar ul {
@@ -126,7 +114,7 @@ button:hover {
 
 .navbar a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  color: rgba(248, 250, 252, 0.8); /* Semi-transparent text */
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -135,16 +123,12 @@ button:hover {
   color: rgba(255, 255, 255, 1); /* Fully white text on hover */
 }
 
-/* .subtitle-header {
+.subtitle-header {
 	position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 700px;
-  overflow: hidden;
-  margin-bottom: -1px;
-  padding-top: 300px;
-  padding: 100px 0;
-  align-items: center;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
   background: linear-gradient(
     to bottom,
     rgba(0, 122, 204, 0.8),
@@ -153,10 +137,9 @@ button:hover {
 }
 
 .subtitle-video {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 100%;
   object-fit: cover;
   height: auto;
@@ -403,35 +386,6 @@ button:hover {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .button-container {
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .featureButton {
-    width: 100%;
-    max-width: 180px;
-    margin: 5px 0;
-  }
-
-  #featureDetailsDiv {
-    padding: 20px;
-  }
-
-  .feature-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .text-section {
-    padding: 0 15px;
-  }
-
-  .media-section img {
-    max-height: 300px;
-  }
-}
-
 #sources-container {
   background-image: linear-gradient(to right, #bfdbfe, #007acc);
   color: #1e293b;
@@ -534,7 +488,7 @@ button:hover {
 }
 
 /* Tablets to small screens */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #lang {
     width: 80%;
   }
@@ -542,6 +496,18 @@ button:hover {
   #tech {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
+  }
+
+	.team-section .flex {
+    gap: 16px !important;
+  }
+
+  .team-section .team-member {
+    margin: 0.5rem;
+  }
+
+	.core-concepts-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -562,10 +528,8 @@ button:hover {
   #tech button {
     padding: 1rem 0.5rem;
   }
-}
 
-@media (max-width: 768px) {
-  .subtitle-header {
+	.subtitle-header {
     height: 400px;
     padding-top: 20px;
   }
@@ -573,6 +537,41 @@ button:hover {
   .subtitle-video {
     width: 100%;
     height: auto;
+  }
+
+	.button-container {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .featureButton {
+    width: 100%;
+    max-width: 180px;
+    margin: 5px 0;
+  }
+
+  #featureDetailsDiv {
+    padding: 20px;
+  }
+
+  .feature-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-section {
+    padding: 0 15px;
+  }
+
+  .media-section img {
+    max-height: 300px;
+  }
+
+	.core-concepts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-button {
+    height: 160px;
   }
 }
 
@@ -613,15 +612,6 @@ button:hover {
   box-shadow: none !important;
   max-width: none !important;
   padding: 1rem !important;
-}
-
-@media (max-width: 1024px) {
-  .team-section .flex {
-    gap: 16px !important;
-  }
-  .team-section .team-member {
-    margin: 0.5rem;
-  }
 }
 
 .get-started-btn {
@@ -754,20 +744,4 @@ button:hover {
 .core-concepts-grid:has(.concept-button:hover) .concept-button:not(:hover) {
   transform: scale(0.9);
   opacity: 0.7;
-}
-
-@media (max-width: 1024px) {
-  .core-concepts-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .core-concepts-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .concept-button {
-    height: 160px;
-  }
 }

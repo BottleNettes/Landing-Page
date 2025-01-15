@@ -6,7 +6,6 @@ import About from './components/About';
 import Docs from './components/Docs';
 import Blog from './components/Blog';
 import Dependencies from './components/Dependencies';
-import Features from './components/Features';
 import CoreConcepts from './components/CoreConcepts';
 import FeatureDetails from './components/FeatureDetails';
 import Team from './components/Team';
@@ -20,20 +19,17 @@ const App = () => (
     <NavBar />
 
     {/* Subtitle Section */}
-    <div className='video-section'>
-      <Subtitle />
-    </div>
+    <Subtitle />
 
     {/* Main Content Section */}
     <div className='main-content'>
-      {/* <CoreConcepts />
+      <CoreConcepts />
       <About />
-      <Features />
       <FeatureDetails />
       <Dependencies />
       <Blog />
       <Team />
-      <SourcesList /> */}
+      <SourcesList />
       {/* Add other components like Features or Footer here */}
     </div>
   </div>
