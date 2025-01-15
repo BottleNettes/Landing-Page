@@ -706,3 +706,107 @@ button:hover {
 .video-wrapper {
   display: none;
 }
+
+.core-concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.concept-button {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.concept-content {
+  position: absolute;
+  inset: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.concept-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.concept-hover {
+  position: absolute;
+  inset: 0;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+.concept-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #60a5fa;
+}
+
+.concept-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.concept-description {
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.concept-button:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.concept-button:hover .concept-default {
+  opacity: 0;
+}
+
+.concept-button:hover .concept-hover {
+  opacity: 1;
+}
+
+.core-concepts-grid:has(.concept-button:hover) .concept-button:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .core-concepts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .core-concepts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-button {
+    height: 160px;
+  }
+}
