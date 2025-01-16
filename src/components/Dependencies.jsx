@@ -1,27 +1,4 @@
 import React from 'react';
-// import JavaScriptIcon from '../assets/javascript.svg';
-// import TypeScriptIcon from '../assets/typescript.svg';
-// import ReactIcon from '../assets/react.svg';
-// import ReactRouterIcon from '../assets/reactrouter.svg';
-// import NodeIcon from '../assets/nodedotjs.svg';
-// import ExpressIcon from '../assets/express.svg';
-// import ViteIcon from '../assets/vite.svg';
-// import OpenAIIcon from '../assets/openai.svg';
-// import PostgreSQLIcon from '../assets/postgresql.svg';
-// import SupabaseIcon from '../assets/supabase.svg';
-// import ZustandIcon from '../assets/zustand.svg';
-// import LucideIcon from '../assets/lucide.svg';
-// import MUIIcon from '../assets/mui.svg';
-// import TailwindIcon from '../assets/tailwindcss.svg';
-// import ChartJSIcon from '../assets/chartdotjs.svg';
-// import AxiosIcon from '../assets/axios.svg';
-// import SequelizeIcon from '../assets/sequelize.svg';
-// import DockerIcon from '../assets/docker.svg';
-// import KubernetesIcon from '../assets/kubernetes.svg';
-// import PrometheusIcon from '../assets/prometheus.svg';
-// import IstioIcon from '../assets/istio.svg';
-// import HelmIcon from '../assets/helm.svg';
-// import ExternalLink from '../assets/external-link.svg';
 
 // import JavaScriptIcon from '/public/assets/javascript.svg';
 // import TypeScriptIcon from '/public/assets/typescript.svg';
