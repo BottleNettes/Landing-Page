@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 import Subtitle from './components/Subtitle';
 import CoreConcepts from './components/CoreConcepts';
 import About from './components/About';
-import Features from './components/features';
+import Features from './components/Features';
 import FeatureDetails from './components/FeatureDetails';
 import Dependencies from './components/Dependencies';
 import Blog from './components/Blog';
