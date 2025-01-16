@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import FeatureDetails from './FeatureDetails';
 
 const Features = () => {
@@ -9,7 +10,7 @@ const Features = () => {
   }, [clickedButton]);
 
   return (
-    <section>
+    <section id='features'>
       <div id='buttonDiv' className='button-container'>
         <button
           className={`featureButton ${

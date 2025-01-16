@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-// import { HiChevronDoubleDown } from 'react-icons/hi';
-// import openingVideo from '../assets/opening.mp4';
+
 import { HiChevronDoubleDown } from 'react-icons/hi';
 import openingVideo from '../../public/assets/opening.mp4';
 

@@ -4,13 +4,16 @@ const NavBar = () => (
 	<nav className='navbar'>
 		<ul>
 			<li>
-				<a href='#about'>About</a>
+				<a href='#concepts'>Concepts</a>
 			</li>
 			<li>
-				<a href='#docs'>Docs</a>
+				<a href='#about'>Demo</a>
 			</li>
 			<li>
-				<a href='#team'>Team</a>
+				<a href='#features'>Features</a>
+			</li>
+			<li>
+				<a href='#dependencies'>Technologies</a>
 			</li>
 			<li>
 				<a href='#blog'>Blog</a>
