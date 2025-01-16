@@ -24,7 +24,7 @@ import HelmIcon from '../assets/helm.svg';
 
 const Dependencies = () => {
 	return (
-		<div id='dependencies' className=' 2xl:grid-cols-2'>
+		<section>
 			<h2>Tools and Frameworks that made BottleNetes</h2>
 			<div id='cards'>
 				<h3>Programming Languages</h3>
@@ -254,7 +254,7 @@ const Dependencies = () => {
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

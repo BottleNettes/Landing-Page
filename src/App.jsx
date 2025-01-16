@@ -1,20 +1,19 @@
 import React from 'react';
-import ErrorBoundary from './components/ErrorBoundary';
 import NavBar from './components/NavBar';
 import Subtitle from './components/Subtitle';
-import About from './components/About';
-import Docs from './components/Docs';
-import Blog from './components/Blog';
-import Dependencies from './components/Dependencies';
 import CoreConcepts from './components/CoreConcepts';
+import About from './components/About';
+import Features from './components/features';
 import FeatureDetails from './components/FeatureDetails';
+import Dependencies from './components/Dependencies';
+import Blog from './components/Blog';
 import Team from './components/Team';
 import SourcesList from './components/SourcesList';
 
 import './styles/index.css';
 
 const App = () => (
-  <div className='app-container'>
+  <div id='app-container' className=' text-slate-900'>
     <NavBar />
 
     {/* Subtitle Section */}
@@ -24,11 +23,12 @@ const App = () => (
     <div className='main-content text-sl'>
       <CoreConcepts />
       <About />
+			<Features />
       <FeatureDetails />
       <Dependencies />
-      {/* <Blog /> */}
-      {/* <Team /> */}
-      {/* <SourcesList /> */}
+      <Blog />
+      <Team />
+      <SourcesList />
       {/* Add other components like Features or Footer here */}
     </div>
   </div>

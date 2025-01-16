@@ -7,6 +7,7 @@ const About = () => (
         <h2 className='text-4xl font-bold text-[#072B51] text-center'>
           About BottleNetes
         </h2>
+        <br />
       </div>
 
       <div className='about-video-container backdrop-blur-sm bg-white/30 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-16'>
@@ -19,7 +20,7 @@ const About = () => (
           loading='lazy'
         ></iframe>
       </div>
-      
+      <br />
       <div className='text-center'>
         <a
           href='https://github.com/oslabs-beta/BottleNetes'
