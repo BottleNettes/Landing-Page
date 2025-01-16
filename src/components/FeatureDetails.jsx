@@ -14,7 +14,7 @@ const FeatureDetails = ({ feature }) => {
   const imagePaths = {
     'Heat Map': heatMapImage,
     'Memory and CPU Usage': memoryCpuImage,
-    Latency: latencyImage,
+    'Latency': latencyImage,
     'Kubernetes Functions': kubernetesImage, // Treat as an image, not a video
     'AI Insights': aiInsightsImage,
   };

@@ -21,14 +21,14 @@ const App = () => (
     <Subtitle />
 
     {/* Main Content Section */}
-    <div className='main-content'>
+    <div className='main-content text-sl'>
       <CoreConcepts />
       <About />
       <FeatureDetails />
       <Dependencies />
-      <Blog />
-      <Team />
-      <SourcesList />
+      {/* <Blog /> */}
+      {/* <Team /> */}
+      {/* <SourcesList /> */}
       {/* Add other components like Features or Footer here */}
     </div>
   </div>

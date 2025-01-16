@@ -31,7 +31,7 @@ const Subtitle = () => {
 
   const handleScrollClick = () => {
     window.scrollTo({
-      top: window.innerHeight,
+      top: window,
       behavior: 'smooth',
     });
   };
