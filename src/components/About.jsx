@@ -1,15 +1,36 @@
 import React from 'react';
 
 const About = () => (
-  <section id='about' className='p-10 bg-blue-100 min-h-screen'>
-    <h2 className='text-3xl font-bold'>About BottleNetes</h2>
-    <p className='mt-4'>
-      BottleNetes simplifies Kubernetes visualization and management!
-    </p>
-    <video className='mt-6 max-w-full' controls>
-      <source src='/placeholder-video.mp4' type='video/mp4' />
-      Your browser does not support the video tag.
-    </video>
+  <section id='about' className='py-20 bg-transparent'>
+    <div className='mx-auto max-w-screen-xl px-4'>
+      <div className='mb-16'>
+        <h2 className='text-4xl font-bold text-[#072B51] text-center'>
+          About BottleNetes
+        </h2>
+      </div>
+
+      <div className='about-video-container backdrop-blur-sm bg-white/30 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-16'>
+        <iframe
+          // src='https://www.youtube.com/embed/KN3IemyqJJw'
+          src='https://www.youtube.com/embed/8QLYp1AubWg'
+          title='BottleNetes Introduction'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen
+          loading='lazy'
+        ></iframe>
+      </div>
+
+      <div className='text-center'>
+        <a
+          href='https://github.com/oslabs-beta/BottleNetes'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='get-started-btn'
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
   </section>
 );
 
