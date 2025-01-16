@@ -1,11 +1,11 @@
 import React from 'react';
 
 // Import the image and video files from the assets folder
-import heatMapImage from '../assets/feature_heatmap.png';
-import memoryCpuImage from '../assets/feature_requestlimit.png';
-import latencyImage from '../assets/feature_latency.png';
-import kubernetesImage from '../assets/feature_k8operation.gif'; // It's a GIF now, not a MOV
-import aiInsightsImage from '../assets/feature_chatbot.png';
+import heatMapImage from '../../public/assets/feature_heatmap.png';
+import memoryCpuImage from '../../public/assets/feature_requestlimit.png';
+import latencyImage from '../../public/assets/feature_latency.png';
+import kubernetesImage from '../../public/assets/feature_k8operation.gif'; // It's a GIF now, not a MOV
+import aiInsightsImage from '../../public/assets/feature_chatbot.png';
 
 const FeatureDetails = ({ feature }) => {
 	let content;

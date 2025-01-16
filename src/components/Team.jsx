@@ -1,9 +1,9 @@
 import React from 'react';
-import funanImage from '../assets/funan_linkedin.jpeg';
-import julieImage from '../assets/julie_linkedin.jpg';
-import markImage from '../assets/mark_linkedin.png';
-import quinImage from '../assets/quin_linkedin.png';
-import zoeImage from '../assets/zoe_linkedin.png';
+import funanImage from '../../public/assets/funan_linkedin.jpeg';
+import julieImage from '../../public/assets/julie_linkedin.jpg';
+import markImage from '../../public/assets/mark_linkedin.png';
+import quinImage from '../../public/assets/quin_linkedin.png';
+import zoeImage from '../../public/assets/zoe_linkedin.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Team = () => {

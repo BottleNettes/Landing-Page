@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import ErrorBoundary from './components/ErrorBoundary';
 import App from './App';
 import './styles/index.css';
-import background from './assets/background.mp4';
+import background from '../public/assets/background.mp4';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>

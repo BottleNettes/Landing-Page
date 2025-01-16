@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-import external from '../assets/external-link.svg';
+import logo from '../../public/assets/logo.png';
+import external from '../../public/assets/external-link.svg';
 
 const SourcesList = () => {
 	return (
