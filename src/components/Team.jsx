@@ -1,6 +1,6 @@
 import React from 'react';
 import funanImage from '../assets/funan_linkedin.jpeg';
-import julieImage from '../assets/julie_linkedin.png';
+import julieImage from '../assets/julie_linkedin.jpg';
 import markImage from '../assets/mark_linkedin.png';
 import quinImage from '../assets/quin_linkedin.png';
 import zoeImage from '../assets/zoe_linkedin.png';
@@ -45,12 +45,12 @@ const Team = () => {
       <div className='max-w-3xl mx-auto'>
         <div className='text-center mb-8'>
           <h2 className='text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 mb-2'>
-            Meet Our Team
+            Meet The Developers
           </h2>
           {/* <p className='text-sm text-slate-600'>The minds behind BottleNetes</p> */}
         </div>
 
-        <div className='flex justify-center gap-32 flex-wrap'>
+        <div className='team-member-container'>
           {teamMembers.map((member, index) => (
             <div key={index} className='team-member w-32'>
               <div className='mb-2'>
@@ -60,10 +60,11 @@ const Team = () => {
                     src={member.image}
                     alt={member.name}
                     style={{
-                      width: '250px',
-                      height: '250px',
+                      width: '230px',
+                      height: '230px',
                       objectFit: 'cover',
                       objectPosition: 'center 20%',
+                      borderRadius: '1rem'
                     }}
                   />
                 </div>

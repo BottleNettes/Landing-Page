@@ -9,7 +9,7 @@ const Features = () => {
 	}, [clickedButton]);
 
 	return (
-		<div className='features-container'>
+		<section>
 			<div
 				id='buttonDiv'
 				className='button-container'
@@ -59,14 +59,8 @@ const Features = () => {
 					AI Insights
 				</button>
 			</div>
-
-			<div
-				id='featureDetailsDiv'
-				className='details-container'
-			>
-				<FeatureDetails feature={clickedButton} />
-			</div>
-		</div>
+			<FeatureDetails feature={clickedButton} />
+		</section>
 	);
 };
 

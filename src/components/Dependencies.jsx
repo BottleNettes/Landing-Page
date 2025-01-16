@@ -21,240 +21,189 @@ import KubernetesIcon from '../assets/kubernetes.svg';
 import PrometheusIcon from '../assets/prometheus.svg';
 import IstioIcon from '../assets/istio.svg';
 import HelmIcon from '../assets/helm.svg';
+import ExternalLink from '../assets/external-link.svg';
 
 const Dependencies = () => {
+	const languages = [
+		{
+			name: 'JavaScript',
+			link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+			linkTitle: 'JavaScript MDN Documentation',
+			icon: JavaScriptIcon,
+		},
+		{
+			name: 'TypeScript',
+			link: 'https://www.typescriptlang.org/',
+			linkTitle: 'TypeScript Homepage',
+			icon: TypeScriptIcon,
+		},
+	];
+
+	const technologies = [
+		{
+			name: 'React',
+			link: 'https://react.dev/',
+			linkTitle: 'React Homepage',
+			icon: ReactIcon,
+		},
+		{
+			name: 'React Router',
+			link: 'https://reactrouter.com/',
+			linkTitle: 'React Router Homepage',
+			icon: ReactRouterIcon,
+		},
+		{
+			name: 'Node.js',
+			link: 'https://nodejs.org/en',
+			linkTitle: 'Node.js Homepage',
+			icon: NodeIcon,
+		},
+		{
+			name: 'Express',
+			link: 'https://expressjs.com/',
+			linkTitle: 'Express Homepage',
+			icon: ExpressIcon,
+		},
+		{
+			name: 'Vite',
+			link: 'https://vite.dev/',
+			linkTitle: 'Vite Homepage',
+			icon: ViteIcon,
+		},
+		{
+			name: 'OpenAI',
+			link: 'https://openai.com/',
+			linkTitle: 'OpenAI Homepage',
+			icon: OpenAIIcon,
+		},
+		{
+			name: 'PostgreSQL',
+			link: 'https://www.postgresql.org/',
+			linkTitle: 'PostgreSQL Homepage',
+			icon: PostgreSQLIcon,
+		},
+		{
+			name: 'Supabase',
+			link: 'https://supabase.com/',
+			linkTitle: 'Supabase Homepage',
+			icon: SupabaseIcon,
+		},
+		{
+			name: 'Zustand',
+			link: 'https://zustand-demo.pmnd.rs/',
+			linkTitle: 'Zustand Homepage',
+			icon: ZustandIcon,
+		},
+		{
+			name: 'Lucide',
+			link: 'https://lucide.dev/',
+			linkTitle: 'Lucide Homepage',
+			icon: LucideIcon,
+		},
+		{
+			name: 'MaterialUI',
+			link: 'https://mui.com/',
+			linkTitle: 'MUI Homepage',
+			icon: MUIIcon,
+		},
+		{
+			name: 'Tailwind CSS',
+			link: 'https://tailwindcss.com/',
+			linkTitle: 'Tailwind CSS Homepage',
+			icon: TailwindIcon,
+		},
+		{
+			name: 'Chart.js',
+			link: 'https://www.chartjs.org/',
+			linkTitle: 'Chart.js Homepage',
+			icon: ChartJSIcon,
+		},
+		{
+			name: 'Axios',
+			link: 'https://axios-http.com/',
+			linkTitle: 'Axios Homepage',
+			icon: AxiosIcon,
+		},
+		{
+			name: 'Sequelize',
+			link: 'https://sequelize.org/',
+			linkTitle: 'Sequelize Homepage',
+			icon: SequelizeIcon,
+		},
+		{
+			name: 'Docker',
+			link: 'https://www.docker.com/',
+			linkTitle: 'Docker Homepage',
+			icon: DockerIcon,
+		},
+		{
+			name: 'Kubernetes',
+			link: 'https://kubernetes.io/',
+			linkTitle: 'Kubernetes Homepage',
+			icon: KubernetesIcon,
+		},
+		{
+			name: 'Prometheus',
+			link: 'https://prometheus.io/',
+			linkTitle: 'Prometheus Homepage',
+			icon: PrometheusIcon,
+		},
+		{
+			name: 'Istio',
+			link: 'https://istio.io/',
+			linkTitle: 'Istio Homepage',
+			icon: IstioIcon,
+		},
+		{
+			name: 'Helm',
+			link: 'https://helm.sh/',
+			linkTitle: 'Helm Homepage',
+			icon: HelmIcon,
+		},
+	];
+
 	return (
-		<div id='dependencies' className=' 2xl:grid-cols-2'>
+		<section>
 			<h2>Tools and Frameworks that made BottleNetes</h2>
 			<div id='cards'>
 				<h3>Programming Languages</h3>
 				<div id='lang'>
-					<a
-						href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-						title='JavaScript MDN Documentation'
-						aria-label='JavaScript MDN Documentation'
-					>
-						<button id='1'>
-							<img src={JavaScriptIcon} />
-							JavaScript
-						</button>
-					</a>
-					<a
-						href='https://www.typescriptlang.org/'
-						title='TypeScript Homepage'
-						aria-label='TypeScript Homepage'
-					>
-						<button id='2'>
-							<img src={TypeScriptIcon} />
-							TypeScript
-						</button>
-					</a>
+					{languages.map((language, index) => {
+						return (
+							<a
+								href={language.link}
+								title={language.linkTitle}
+								aria-label={language.linkTitle}
+								key={index}
+							>
+								<button>
+									<img src={language.icon} />
+									{language.name}
+								</button>
+							</a>
+						);
+					})}
 				</div>
 				<h3>Technologies and Frameworks</h3>
 				<div id='tech'>
-					<a
-						href='https://react.dev/'
-						title='React Homepage'
-						aria-label='React Homepage'
-					>
-						<button id='3'>
-							<img src={ReactIcon} />
-							React
-						</button>
-					</a>
-					<a
-						href='https://react.dev/'
-						title='React Homepage'
-						aria-label='React Homepage'
-					>
-						<button id='4'>
-							<img src={ReactRouterIcon} />
-							React Router
-						</button>
-					</a>
-					<a
-						href='https://nodejs.org/en'
-						title='Node.js Homepage'
-						aria-label='Node.js Homepage'
-					>
-						<button id='5'>
-							<img src={NodeIcon} />
-							Node.js
-						</button>
-					</a>
-					<a
-						href='https://expressjs.com/'
-						title='Express.js Homepage'
-						aria-label='Express.js Homepage'
-					>
-						<button id='6'>
-							<img src={ExpressIcon} />
-							Express
-						</button>
-					</a>
-					<a
-						href='https://vite.dev/'
-						title='Vite Homepage'
-						aria-label='Vite Homepage'
-					>
-						<button id='7'>
-							<img src={ViteIcon} />
-							Vite
-						</button>
-					</a>
-					<a
-						href='https://openai.com/'
-						title='OpenAI Homepage'
-						aria-label='OpenAI Homepage'
-					>
-						<button id='8'>
-							<img src={OpenAIIcon} />
-							OpenAI
-						</button>
-					</a>
-					<a
-						href='https://www.postgresql.org/'
-						title='PostgreSQL Homepage'
-						aria-label='PostgreSQL Homepage'
-					>
-						<button id='9'>
-							<img src={PostgreSQLIcon} />
-							PostgreSQL
-						</button>
-					</a>
-					<a
-						href='https://supabase.com/'
-						title='Supabase Homepage'
-						aria-label='Supabase Homepage'
-					>
-						<button id='10'>
-							<img src={SupabaseIcon} />
-							Supabase
-						</button>
-					</a>
-					<a
-						href='https://zustand-demo.pmnd.rs/'
-						title='Zustand Homepage'
-						aria-label='Zustand Homepage'
-					>
-						<button id='11'>
-							<img src={ZustandIcon} />
-							Zustand
-						</button>
-					</a>
-					<a
-						href='https://lucide.dev/'
-						title='Lucide Homepage'
-						aria-label='Lucide Homepage'
-					>
-						<button id='12'>
-							<img src={LucideIcon} />
-							Lucide
-						</button>
-					</a>
-					<a
-						href='https://mui.com/'
-						title='MUI Homepage'
-						aria-label='MUI Homepage'
-					>
-						<button id='13'>
-							<img src={MUIIcon} />
-							MaterialUI
-						</button>
-					</a>
-					<a
-						href='https://tailwindcss.com/'
-						title='Tailwind CSS Homepage'
-						aria-label='Tailwind CSS Homepage'
-					>
-						<button id='14'>
-							<img src={TailwindIcon} />
-							Tailwind CSS
-						</button>
-					</a>
-					<a
-						href='https://www.chartjs.org/'
-						title='Chart.js Homepage'
-						aria-label='Chart.js Homepage'
-					>
-						<button id='15'>
-							<img src={ChartJSIcon} />
-							Chart.js
-						</button>
-					</a>
-					<a
-						href='https://axios-http.com/'
-						title='Axios Homepage'
-						aria-label='Axios Homepage'
-					>
-						<button id='16'>
-							<img src={AxiosIcon} />
-							Axios
-						</button>
-					</a>
-					<a
-						href='https://sequelize.org/'
-						title='Sequelize Homepage'
-						aria-label='Sequelize Homepage'
-					>
-						<button id='17'>
-							<img src={SequelizeIcon} />
-							Sequelize
-						</button>
-					</a>
-					<a
-						href='https://www.docker.com/'
-						title='Docker Homepage'
-						aria-label='Docker Homepage'
-					>
-						<button id='18'>
-							<img src={DockerIcon} />
-							Docker
-						</button>
-					</a>
-					<a
-						href='https://kubernetes.io/'
-						title='Kubernetes Homepage'
-						aria-label='Kubernetes Homepage'
-					>
-						<button id='19'>
-							<img src={KubernetesIcon} />
-							Kubernetes
-						</button>
-					</a>
-					<a
-						href='https://prometheus.io/'
-						title='Prometheus Homepage'
-						aria-label='Prometheus Homepage'
-					>
-						<button id='20'>
-							<img src={PrometheusIcon} />
-							Prometheus
-						</button>
-					</a>
-					<a
-						href='https://istio.io/'
-						title='Istio homepage'
-						aria-label='Istio Homepage'
-					>
-						<button id='21'>
-							<img src={IstioIcon} />
-							Istio
-						</button>
-					</a>
-					<a
-						href='https://helm.sh/'
-						title='Helm Homepage'
-						aria-label='Helm Homepage'
-					>
-						<button id='22'>
-							<img src={HelmIcon} />
-							Helm
-						</button>
-					</a>
+					{technologies.map((technology, index) => {
+						return (
+							<a
+								href={technology.link}
+								title={technology.linkTitle}
+								aria-label={technology.linkTitle}
+								key={index}
+							>
+								<button>
+									<img src={technology.icon} />
+									{technology.name}
+								</button>
+							</a>
+						);
+					})}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -1,29 +1,29 @@
 import React from 'react';
-import ErrorBoundary from './components/ErrorBoundary';
 import NavBar from './components/NavBar';
 import Subtitle from './components/Subtitle';
-import About from './components/About';
-import Docs from './components/Docs';
-import Blog from './components/Blog';
-import Dependencies from './components/Dependencies';
-import Features from './components/Features';
 import CoreConcepts from './components/CoreConcepts';
+import About from './components/About';
+import Features from './components/features';
 import FeatureDetails from './components/FeatureDetails';
+import Dependencies from './components/Dependencies';
+import Blog from './components/Blog';
 import Team from './components/Team';
 import SourcesList from './components/SourcesList';
 
 import './styles/index.css';
 
 const App = () => (
-  <div className='app-container'>
+  <div id='app-container' className=' text-slate-900'>
     <NavBar />
+
+    {/* Subtitle Section */}
     <Subtitle />
 
     {/* Main Content Section */}
-    <div className='main-content'>
+    <div className='main-content text-sl'>
       <CoreConcepts />
       <About />
-      <Features />
+			<Features />
       <FeatureDetails />
       <Dependencies />
       <Blog />

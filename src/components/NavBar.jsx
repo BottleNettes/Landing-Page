@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavBar = () => (
 	<nav className='navbar'>
-		<ul className='flex justify-around'>
+		<ul>
 			<li>
 				<a href='#about'>About</a>
 			</li>
