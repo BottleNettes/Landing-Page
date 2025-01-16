@@ -1,6 +1,5 @@
 import React from 'react';
-// import MediumLogo from '../assets/Medium-Wordmark-White.svg';
-// import ProductHuntLogo from '../assets/producthunt-logo.svg';
+
 import MediumLogo from '/public/assets/Medium-Wordmark-White.svg';
 import ProductHuntLogo from '/public/assets/producthunt-logo.svg';
 

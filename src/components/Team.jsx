@@ -1,4 +1,5 @@
 import React from 'react';
+
 import funanImage from '../../public/assets/funan_linkedin.jpeg';
 import julieImage from '../../public/assets/julie_linkedin.jpg';
 import markImage from '../../public/assets/mark_linkedin.png';

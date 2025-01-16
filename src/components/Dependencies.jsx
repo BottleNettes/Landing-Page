@@ -1,30 +1,5 @@
 import React from 'react';
 
-// import JavaScriptIcon from '/public/assets/javascript.svg';
-// import TypeScriptIcon from '/public/assets/typescript.svg';
-// import ReactIcon from '/public/assets/react.svg';
-// import ReactRouterIcon from '/public/assets/reactrouter.svg';
-// import NodeIcon from '/public/assets/nodedotjs.svg';
-// import ExpressIcon from '/public/assets/express.svg';
-// import ViteIcon from '/public/assets/vite.svg';
-// import OpenAIIcon from '/public/assets/openai.svg';
-// import PostgreSQLIcon from '/public/assets/postgresql.svg';
-// import SupabaseIcon from '/public/assets/supabase.svg';
-// import ZustandIcon from '/public/assets/zustand.svg';
-// import LucideIcon from '/public/assets/lucide.svg';
-// import MUIIcon from '/public/assets/mui.svg';
-// import TailwindIcon from '/public/assets/tailwindcss.svg';
-// import ChartJSIcon from '/public/assets/chartdotjs.svg';
-// import AxiosIcon from '/public/assets/axios.svg';
-// import SequelizeIcon from '/public/assets/sequelize.svg';
-// import DockerIcon from '/public/assets/docker.svg';
-// import KubernetesIcon from './public/assets/kubernetes.svg';
-// import PrometheusIcon from '/public/assets/prometheus.svg';
-// import IstioIcon from '/public/assets/istio.svg';
-// import HelmIcon from '/public/assets/helm.svg';
-// import ExternalLink from '/public/assets/external-link.svg';
-
-
 import JavaScriptIcon from '../../public/assets/javascript.svg';
 import TypeScriptIcon from '../../public/assets/typescript.svg';
 import ReactIcon from '../../public/assets/react.svg';
@@ -191,7 +166,7 @@ const Dependencies = () => {
 	];
 
 	return (
-		<section>
+		<section id='dependencies'>
 			<h2>Tools and Frameworks that made BottleNetes</h2>
 			<div id='cards'>
 				<h3>Programming Languages</h3>

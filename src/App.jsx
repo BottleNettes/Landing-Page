@@ -1,4 +1,5 @@
 import React from 'react';
+
 import NavBar from './components/NavBar';
 import Subtitle from './components/Subtitle';
 import CoreConcepts from './components/CoreConcepts';
