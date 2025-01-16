@@ -7,9 +7,9 @@ const Blog = () => (
 		<h2 className='text-3xl font-bold'>Blogs & Articles</h2>
 		<div id='blog-items'>
 			<a
-				href='https://medium.com/@bottlenetes/about'
-				title='BottleNetes Medium Profile'
-				aria-label='BottleNetes Medium Profile'
+				href='https://medium.com/@bottlenetes/bottlenetes-simplifying-kubernetes-management-f91118f07f1c'
+				title='BottleNetes Medium Article'
+				aria-label='BottleNetes Medium Article'
 			>
 				<button>
 					<img
